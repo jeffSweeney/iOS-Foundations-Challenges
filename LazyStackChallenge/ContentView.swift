@@ -15,14 +15,14 @@ struct ContentView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(1...100, id: \.self) { index in
-                        buildRectagle(i: index, w: rectangleWidth)
+                        buildRectangle(i: index, w: rectangleWidth)
                     }
                 }
             }
         }
     }
     
-    private func buildRectagle(i: Int, w: CGFloat) -> some View {
+    private func buildRectangle(i: Int, w: CGFloat) -> some View {
         // This pow index will make a symetric "list" of rectangles:
         // i = 1 rectangle == i = 100 rectangle
         // i = 2 rectangle == i = 99 rectangle
