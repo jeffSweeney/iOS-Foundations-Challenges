@@ -22,7 +22,7 @@ struct CardSwiperView: View {
                         Image(systemName: "\(num).circle")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: geo.size.width/4*3, height: geo.size.width/2, alignment: .center)
+                            .frame(width: geo.size.width/4*3, height: geo.size.height/3, alignment: .center)
                     }
                 }
             }
