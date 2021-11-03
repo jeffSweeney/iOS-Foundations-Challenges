@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		63496B4C27320C5C005AEA77 /* AVKitChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63496B4B27320C5C005AEA77 /* AVKitChallengeApp.swift */; };
-		63496B4E27320C5C005AEA77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63496B4D27320C5C005AEA77 /* ContentView.swift */; };
+		63496B4E27320C5C005AEA77 /* AVKitChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63496B4D27320C5C005AEA77 /* AVKitChallengeView.swift */; };
 		63496B5027320C5D005AEA77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63496B4F27320C5D005AEA77 /* Assets.xcassets */; };
 		63496B5327320C5D005AEA77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63496B5227320C5D005AEA77 /* Preview Assets.xcassets */; };
+		63496B5B27320D88005AEA77 /* LoremSwiftum in Frameworks */ = {isa = PBXBuildFile; productRef = 63496B5A27320D88005AEA77 /* LoremSwiftum */; };
+		63496B5F27320E1D005AEA77 /* AVKitChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63496B5E27320E1D005AEA77 /* AVKitChallengeModel.swift */; };
+		63496B6227320EE7005AEA77 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63496B6127320EE7005AEA77 /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63496B4827320C5C005AEA77 /* AVKitChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVKitChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63496B4B27320C5C005AEA77 /* AVKitChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVKitChallengeApp.swift; sourceTree = "<group>"; };
-		63496B4D27320C5C005AEA77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63496B4D27320C5C005AEA77 /* AVKitChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVKitChallengeView.swift; sourceTree = "<group>"; };
 		63496B4F27320C5D005AEA77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63496B5227320C5D005AEA77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63496B5E27320E1D005AEA77 /* AVKitChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVKitChallengeModel.swift; sourceTree = "<group>"; };
+		63496B6127320EE7005AEA77 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63496B6227320EE7005AEA77 /* AVKit.framework in Frameworks */,
+				63496B5B27320D88005AEA77 /* LoremSwiftum in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +44,7 @@
 			children = (
 				63496B4A27320C5C005AEA77 /* AVKitChallenge */,
 				63496B4927320C5C005AEA77 /* Products */,
+				63496B6027320EE7005AEA77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				63496B4B27320C5C005AEA77 /* AVKitChallengeApp.swift */,
-				63496B4D27320C5C005AEA77 /* ContentView.swift */,
+				63496B5C27320DFC005AEA77 /* Views */,
+				63496B5D27320E05005AEA77 /* ViewModels */,
 				63496B4F27320C5D005AEA77 /* Assets.xcassets */,
 				63496B5127320C5D005AEA77 /* Preview Content */,
 			);
@@ -65,6 +74,30 @@
 				63496B5227320C5D005AEA77 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63496B5C27320DFC005AEA77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63496B4D27320C5C005AEA77 /* AVKitChallengeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63496B5D27320E05005AEA77 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				63496B5E27320E1D005AEA77 /* AVKitChallengeModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		63496B6027320EE7005AEA77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63496B6127320EE7005AEA77 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,9 @@
 			dependencies = (
 			);
 			name = AVKitChallenge;
+			packageProductDependencies = (
+				63496B5A27320D88005AEA77 /* LoremSwiftum */,
+			);
 			productName = AVKitChallenge;
 			productReference = 63496B4827320C5C005AEA77 /* AVKitChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 63496B3F27320C5C005AEA77;
+			packageReferences = (
+				63496B5927320D88005AEA77 /* XCRemoteSwiftPackageReference "LoremSwiftum" */,
+			);
 			productRefGroup = 63496B4927320C5C005AEA77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63496B4E27320C5C005AEA77 /* ContentView.swift in Sources */,
+				63496B4E27320C5C005AEA77 /* AVKitChallengeView.swift in Sources */,
 				63496B4C27320C5C005AEA77 /* AVKitChallengeApp.swift in Sources */,
+				63496B5F27320E1D005AEA77 /* AVKitChallengeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +379,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63496B5927320D88005AEA77 /* XCRemoteSwiftPackageReference "LoremSwiftum" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukaskubanek/LoremSwiftum.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63496B5A27320D88005AEA77 /* LoremSwiftum */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63496B5927320D88005AEA77 /* XCRemoteSwiftPackageReference "LoremSwiftum" */;
+			productName = LoremSwiftum;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63496B4027320C5C005AEA77 /* Project object */;
 }

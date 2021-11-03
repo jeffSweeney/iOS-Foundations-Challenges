@@ -11,7 +11,8 @@ import SwiftUI
 struct AVKitChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AVKitChallengeView()
+                .environmentObject(AVKitChallengeModel())
         }
     }
 }
