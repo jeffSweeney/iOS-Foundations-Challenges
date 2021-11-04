@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  UIKitInterpolationChallenge0.swift
 //  UIKitInterpolationChallenge
 //
 //  Created by Jeffrey Sweeney on 11/4/21.
@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct UIKitInterpolationChallenge: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        MyWebView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        UIKitInterpolationChallenge()
     }
 }
