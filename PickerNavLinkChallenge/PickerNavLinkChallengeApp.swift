@@ -11,7 +11,7 @@ import SwiftUI
 struct PickerNavLinkChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
