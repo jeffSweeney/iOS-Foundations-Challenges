@@ -67,6 +67,8 @@ class RandomFactModel: ObservableObject {
     }
     
     private func defaultFailureFact() {
-        self.randomFact = "Fact: I can't retrieve a new fact right now! 😭"
+        DispatchQueue.main.async {
+            self.randomFact = "Fact: I can't retrieve a new fact right now! 😭"
+        }
     }
 }
