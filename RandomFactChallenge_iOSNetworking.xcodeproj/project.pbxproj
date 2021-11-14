@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		63D6312E27409A83009BC18F /* RandomFactChallenge_iOSNetworkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D6312D27409A83009BC18F /* RandomFactChallenge_iOSNetworkingApp.swift */; };
-		63D6313027409A83009BC18F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D6312F27409A83009BC18F /* ContentView.swift */; };
+		63D6313027409A83009BC18F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D6312F27409A83009BC18F /* HomeView.swift */; };
 		63D6313227409A83009BC18F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D6313127409A83009BC18F /* Assets.xcassets */; };
 		63D6313527409A83009BC18F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D6313427409A83009BC18F /* Preview Assets.xcassets */; };
+		63D6313F2740A2FB009BC18F /* RandomFactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D6313E2740A2FB009BC18F /* RandomFactModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63D6312A27409A83009BC18F /* RandomFactChallenge_iOSNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomFactChallenge_iOSNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D6312D27409A83009BC18F /* RandomFactChallenge_iOSNetworkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFactChallenge_iOSNetworkingApp.swift; sourceTree = "<group>"; };
-		63D6312F27409A83009BC18F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63D6312F27409A83009BC18F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		63D6313127409A83009BC18F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63D6313427409A83009BC18F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63D6313B27409D2D009BC18F /* RandomFactChallenge-iOSNetworking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RandomFactChallenge-iOSNetworking-Info.plist"; sourceTree = SOURCE_ROOT; };
+		63D6313E2740A2FB009BC18F /* RandomFactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFactModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		63D6312C27409A83009BC18F /* RandomFactChallenge_iOSNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				63D6313B27409D2D009BC18F /* RandomFactChallenge-iOSNetworking-Info.plist */,
 				63D6312D27409A83009BC18F /* RandomFactChallenge_iOSNetworkingApp.swift */,
-				63D6312F27409A83009BC18F /* ContentView.swift */,
+				63D6313C27409EC6009BC18F /* Views */,
+				63D6313D2740A234009BC18F /* ViewModels */,
 				63D6313127409A83009BC18F /* Assets.xcassets */,
 				63D6313327409A83009BC18F /* Preview Content */,
 			);
@@ -65,6 +70,22 @@
 				63D6313427409A83009BC18F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63D6313C27409EC6009BC18F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63D6312F27409A83009BC18F /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63D6313D2740A234009BC18F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				63D6313E2740A2FB009BC18F /* RandomFactModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63D6313027409A83009BC18F /* ContentView.swift in Sources */,
+				63D6313027409A83009BC18F /* HomeView.swift in Sources */,
 				63D6312E27409A83009BC18F /* RandomFactChallenge_iOSNetworkingApp.swift in Sources */,
+				63D6313F2740A2FB009BC18F /* RandomFactModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +293,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RandomFactChallenge_iOSNetworking/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RandomFactChallenge-iOSNetworking-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +322,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RandomFactChallenge_iOSNetworking/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RandomFactChallenge-iOSNetworking-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

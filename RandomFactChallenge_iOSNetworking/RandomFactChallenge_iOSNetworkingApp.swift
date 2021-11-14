@@ -11,7 +11,8 @@ import SwiftUI
 struct RandomFactChallenge_iOSNetworkingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .environmentObject(RandomFactModel())
         }
     }
 }
